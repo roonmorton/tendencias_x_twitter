@@ -71,7 +71,7 @@ stop_words = list(stopwords.words('english'))
 filtered_tweets = []
 
 # Se añade la stoprword: amp, ax, ex
-stop_words.extend(("us", "like", "rt", "im", "xa", "xe"))
+stop_words.extend(("us", "like", "rt", "get", "via", "new", "day", "watch", "im","see", "dont", "good", "make"))
 #print(stop_words[:10])
         
 
@@ -84,4 +84,4 @@ for tweet in tweets:
 # Análisis de frecuencia de palabras
 frecuencia = FreqDist(filtered_tweets)
 frecuencia.plot(20, cumulative=False)  # Mostrar las 20 palabras más frecuentes
-plt.show()
+#plt.show()
